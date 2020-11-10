@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --blue: #00a7df;
+  --deepGray: #232323;
+  --gray: #eceae6;
+  --textColor: #292929;
+  --lightText: #8f8f8f;
+  --fontFamily: "Roboto", sans-serif;
+  --font-size: 16px;
+  --font-size-small: 12px;
+  --transition: 0.4s ease;
+}
+.m-right {
+  margin-right: 5%;
+}
+.m-left {
+  margin-left: 10%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0 !important;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h3::after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: var(--blue);
+  margin: 10px 0;
+}
+.btn-blue {
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  color: white;
+  padding: 5px 30px;
+}
+.btn-blue:hover {
+  background: white;
+  transition: var(--transition);
+  color: var(--blue);
+}
+/* navbar */
+
+.bg-light {
+  background: var(--gray) !important;
+}
+nav a.navbar-brand {
+  margin-left: 10% !important;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navbarLine {
+  display: block;
+  content: "";
+  background: var(--blue);
+  height: 2.6rem;
+  width: 1px;
+}
+nav .border-right {
+  border-right: 1px solid var(--blue) !important;
+  padding-right: 30px;
+}
+.navbar-brand {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+nav h1 {
+  font-size: 1.2rem !important;
+  line-height: 1.2 !important;
+  font-weight: 300;
+}
+nav h1 span {
+  font-weight: bold;
+  font-size: 1.2rem !important;
+  letter-spacing: 8px;
+}
+nav h1 span .noSpace {
+  letter-spacing: 0;
+}
+
+/* header */
+header {
+  background: url(img/Header.png);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+header img {
+  min-width: 150px;
+  width: 12%;
+}
+
+/* services */
+.services {
+  background: var(--blue);
+}
+.services article {
+  margin: 30px 0;
+}
+.services .col-md-2 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.services .wrapper {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.services .border {
+  border: 2px solid white !important;
+  padding: 20px 10px;
+}
+.services article h4 {
+  font-size: 1rem !important;
+  font-weight: 600;
+}
+/* O nama */
+
+.aboutUs hgroup {
+  background: url(img/O\ nama.png);
+  background-position: center;
+  background-size: 15%;
+  background-repeat: no-repeat;
+}
+.aboutUs hgroup h2 {
+  font-weight: 500 !important;
+  font-size: 2.2rem;
+}
+.aboutUs .container .row .col-md-6 h3 {
+  font-weight: 400 !important;
+}
+
+/* CTA */
+.cta {
+  background: var(--deepGray);
+}
+
+.cta.py-5 {
+  padding: 80px 0 !important;
+}
+.cta form input {
+  background: var(--deepGray);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 2px 5px;
+  width: 283px !important;
+  margin-right: 5px;
+  font-size: 0.95rem;
+}
+
+.cta form button {
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  font-size: 0.95rem;
+  padding: 2px 5px;
+  width: 283px !important;
+}
+.cta form button:hover {
+  background: transparent;
+
+  color: var(--blue);
+  transition: var(--transition);
+}
+
+/* istorija */
+.istorija {
+  background: url(img/history.png);
+  background-position: center;
+  background-size: cover;
+  /* height: auto; */
+  padding: 150px 0;
+}
+.istorija hgroup h2 {
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.istorija hgroup p {
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+/* oblast rada */
+
+.oblastRada hgroup {
+  padding: 60px 0;
+  background: url(img/cime\ se\ bavimo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.oblastRada hgroup h2 {
+  font-weight: 500 !important;
+  font-size: 2.2rem;
+  padding-top: 1.5%;
+}
+.oblastRada p {
+  margin-bottom: 60px;
+}
+.oblastRada .row {
+  padding-bottom: 70px;
+}
+.oblastRada .col-md-4 .wrapper img {
+  padding: 20px 0;
+}
+
+.oblastRada article {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.oblastRada article .wrapper {
+  min-height: 300px;
+  padding: 20px 20px;
+  position: relative;
+}
+.oblastRada article button {
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+}
+
+/* zasto mi */
+.zastoMi {
+  background: var(--gray);
+}
+.zastoMi hgroup {
+  padding: 50px 0;
+  background: url(img/performance.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 27%;
+}
+.zastoMi hgroup h2 {
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+.zastoMi article img {
+  padding-right: 30px;
+  padding-bottom: 100px;
+}
+.zastoMi article h3::after {
+  margin: 15px 0 !important;
+}
+.zastoMi article p {
+  margin-bottom: 35px !important;
+}
+.zastoMi article a {
+  padding-bottom: 35px;
+}
+.zastoMi article button {
+  width: 203px;
+}
+.zastoMi article button:hover {
+  background: transparent;
+}
+
+/* BES */
+
+.bes {
+  background: var(--blue);
+  padding: 50px 0;
+}
+.bes article h3::after {
+  background: white;
+  margin: 20px 0;
+}
+
+.bes article form input,
+textarea {
+  background: var(--blue);
+  border: 1px solid white;
+  margin-bottom: 20px;
+  color: white;
+  padding: 4px 5px;
+}
+.bes article form button {
+  width: max-content;
+  padding: 5px 25px;
+  background: white;
+  border: 1px solid white;
+  color: var(--blue);
+}
+.bes article form button:hover {
+  color: white;
+  transition: var(--transition);
+  background: transparent;
+}
