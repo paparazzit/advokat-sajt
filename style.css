@@ -294,3 +294,19 @@ textarea {
   transition: var(--transition);
   background: transparent;
 }
+/* counter */
+.counter {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/counter.png);
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+}
+.counter hgroup {
+  border: 1px solid var(--blue);
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.226);
+}
+.counter hgroup p {
+  margin-bottom: 0;
+}
