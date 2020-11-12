@@ -10,6 +10,9 @@
   --font-size-small: 12px;
   --transition: 0.4s ease;
 }
+body {
+  font-size: var(--font-size);
+}
 .m-right {
   margin-right: 5%;
 }
@@ -145,19 +148,22 @@ header img {
   width: 12%;
 }
 
-/* services */
+/* SERVICES*/
 .services {
   background: var(--blue);
 }
 .services article {
   margin: 30px 0;
 }
-.services .col-md-2 {
-  padding-right: 0;
-  padding-left: 0;
+.services .col-md-2,
+.services .col-lg-2,
+.services .col-sm-4 {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .services .wrapper {
-  height: 120px;
+  height: 130px;
+  min-width: 166px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -281,6 +287,7 @@ header img {
   width: 30% !important;
   height: auto !important;
 }
+
 /* zasto mi */
 .zastoMi {
   background: var(--gray);
@@ -462,4 +469,68 @@ footer hr {
 }
 footer .bottomBar {
   background: var(--deepGray) !important;
+}
+
+/* RESPONISVE */
+
+@media (max-width: 1200px) {
+  .services article .wrapper h4 {
+    font-size: 0.95rem !important;
+  }
+  .services .wrapper {
+    min-width: 140px;
+  }
+
+  .btn-blue:hover {
+    background: white;
+    transition: var(--transition);
+    color: var(--blue);
+  }
+  .oblastRada article button {
+    left: 24%;
+  }
+
+  footer .row {
+    width: 95% !important;
+    margin: 0 auto !important;
+    justify-content: space-between !important;
+  }
+  footer h5 {
+    font-size: 0.85rem !important;
+    /* text-align: center; */
+    letter-spacing: 1px;
+  }
+  footer hgroup h4 {
+    /* text-align: center; */
+    font-size: 1.3rem;
+    letter-spacing: 4px !important;
+  }
+  footer .container .row article:last-child {
+    min-height: 50px;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 990px) {
+  .oblastRada .row {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .bolastRada .row article .wrapper {
+    min-width: 450px !important;
+  }
+}
+@media (max-width: 575px) {
+  .bolastRada .row article {
+    color: red !important;
+  }
+  footer,
+  footer .workHours {
+    text-align: center !important;
+  }
+  footer article:first-child {
+    justify-content: center !important;
+  }
+  footer article {
+    margin-bottom: 30px;
+  }
 }
