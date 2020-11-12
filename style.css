@@ -204,13 +204,10 @@ header img {
   padding-top: 1.5%;
 }
 .oblastRada p {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 .oblastRada .row {
   padding-bottom: 70px;
-}
-.oblastRada .col-md-4 .wrapper img {
-  padding: 20px 0;
 }
 
 .oblastRada article {
@@ -218,16 +215,19 @@ header img {
   margin-bottom: 50px;
 }
 .oblastRada article .wrapper {
-  min-height: 300px;
+  min-height: 350px;
   padding: 20px 20px;
   position: relative;
 }
 .oblastRada article button {
   position: absolute;
-  bottom: -10px;
+  bottom: -15px;
   left: 25%;
 }
-
+.oblastRada article img {
+  width: 30% !important;
+  height: auto !important;
+}
 /* zasto mi */
 .zastoMi {
   background: var(--gray);
@@ -310,3 +310,40 @@ textarea {
 .counter hgroup p {
   margin-bottom: 0;
 }
+/* Gostovanja */
+
+.gostovanja {
+}
+.gostovanja hgroup {
+  background: url(img/Medija.png);
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 70px 0 80px 0;
+}
+.gostovanja article img {
+  position: relative;
+}
+
+.gostovanja article .date {
+  background: var(--blue);
+  color: white;
+  display: inline-block;
+  padding: 0px 10px;
+  position: absolute;
+  top: 0;
+}
+.gostovanja article .date h4 {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.gostovanja article .date p {
+  margin-bottom: 0px !important;
+}
+.gostovanja p.indicator {
+  font-size: 4.6rem;
+  color: #cccccc;
+  font-weight: 200;
+}
+/* nasli klijenti */
+
