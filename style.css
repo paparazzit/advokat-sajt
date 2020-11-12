@@ -46,22 +46,16 @@ h3::after {
   transition: var(--transition);
   color: var(--blue);
 }
+.ml-6 {
+  margin-left: 80px;
+}
+
 /* navbar */
 
 .bg-light {
   background: var(--gray) !important;
 }
-nav a.navbar-brand {
-  margin-left: 10% !important;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.navbarLine {
-  display: block;
-  content: "";
-  background: var(--blue);
-  height: 2.6rem;
-  width: 1px;
-}
+
 nav .border-right {
   border-right: 1px solid var(--blue) !important;
   padding-right: 30px;
@@ -69,11 +63,13 @@ nav .border-right {
 .navbar-brand {
   padding-bottom: 0 !important;
   padding-top: 0 !important;
+  margin-left: 10% !important;
 }
 nav h1 {
   font-size: 1.2rem !important;
   line-height: 1.2 !important;
   font-weight: 300;
+  text-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
 }
 nav h1 span {
   font-weight: bold;
@@ -83,6 +79,28 @@ nav h1 span {
 nav h1 span .noSpace {
   letter-spacing: 0;
 }
+nav .navbar-nav .nav-link {
+  padding: 11px 2rem !important;
+}
+nav .navbar-nav a:first-child {
+  padding-left: 6rem !important;
+  margin-left: 2rem;
+}
+nav .navbar-nav a:nth-child(4) {
+  margin-left: 6rem !important;
+
+  padding-left: 2rem;
+  font-weight: 600;
+  color: black !important;
+}
+nav .navbar-nav a:nth-child(4),
+nav .navbar-nav a:first-child {
+  border-left: 1px solid var(--blue) !important;
+}
+/* nav .navbar-nav a:last-child {
+  position: absolute;
+  right: 10px;
+} */
 
 /* header */
 header {
@@ -128,6 +146,7 @@ header img {
   background-position: center;
   background-size: 15%;
   background-repeat: no-repeat;
+  margin: 20px 0 30px 0;
 }
 .aboutUs hgroup h2 {
   font-weight: 500 !important;
