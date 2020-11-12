@@ -217,6 +217,7 @@ header img {
   font-size: 0.95rem;
   padding: 2px 5px;
   width: 283px !important;
+  margin-right: 5px;
 }
 .cta form button:hover {
   background: transparent;
@@ -271,7 +272,7 @@ header img {
   margin-bottom: 50px;
 }
 .oblastRada .col-sm-6 {
-  min-width: 250px !important;
+  min-width: 250px;
 }
 .oblastRada article .wrapper {
   min-height: 350px;
@@ -512,16 +513,33 @@ footer .bottomBar {
 }
 @media (max-width: 990px) {
   .oblastRada .row {
-    width: 90% !important;
-    margin: 0 auto;
+    /* width: 90% !important;
+    margin: 0 auto; */
+    justify-content: center !important;
   }
-  .bolastRada .row article .wrapper {
-    min-width: 450px !important;
+  .oblastRada .row .col-sm-6 {
+    min-width: 300px !important;
+  }
+}
+@media (max-width: 768px) {
+  .oblastRada .row .col-sm-6 {
+    min-width: 270px !important;
+  }
+  .oblastRada article button {
+    left: 22%;
   }
 }
 @media (max-width: 575px) {
-  .bolastRada .row article {
-    color: red !important;
+  .oblastRada .row article img {
+    width: auto !important;
+  }
+  .oblastRada article .wrapper {
+    min-height: 250px;
+  }
+  .oblastRada article button {
+    position: absolute;
+    bottom: -15px;
+    left: 35%;
   }
   footer,
   footer .workHours {
