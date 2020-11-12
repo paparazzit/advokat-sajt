@@ -323,6 +323,7 @@ textarea {
 }
 .gostovanja article img {
   position: relative;
+  width: 100%;
 }
 
 .gostovanja article .date {
@@ -331,7 +332,9 @@ textarea {
   display: inline-block;
   padding: 0px 10px;
   position: absolute;
-  top: 0;
+  top: 0px;
+  left: 0px;
+  margin-left: 15px;
 }
 .gostovanja article .date h4 {
   font-weight: 700;
@@ -346,4 +349,64 @@ textarea {
   font-weight: 200;
 }
 /* nasli klijenti */
-
+.nasiKlijenti {
+  background: var(--gray);
+  padding: 80px 0;
+}
+.nasiKlijenti h2 {
+  padding-bottom: 50px;
+}
+/* footer */
+footer {
+  background: var(--deepGray);
+}
+footer .row {
+  height: 40vh;
+}
+footer .container .row article {
+  min-height: 150px;
+}
+footer article p,
+footer article a {
+  color: var(--lightText);
+}
+footer article h4,
+footer article h5,
+footer article h6 {
+  color: var(--blue);
+}
+footer article hgroup {
+  margin-bottom: 20px;
+}
+footer article hgroup h5 {
+  font-size: 1.09rem;
+}
+footer article hgroup h4 {
+  letter-spacing: 4px;
+}
+footer article p {
+  margin-bottom: 0;
+}
+footer article .workHours p span {
+  color: var(--blue);
+  font-weight: 600;
+}
+footer article h6 {
+  padding-bottom: 1rem;
+}
+footer article:last-child span {
+  color: white;
+}
+footer .bottomBar p {
+  margin-bottom: 0 !important;
+  color: white;
+  font-weight: 500;
+  padding: 20px 0;
+}
+footer hr {
+  border: 1px solid var(--blue);
+  margin: 0 !important;
+}
+footer .bottomBar {
+  background: var(--deepGray) !important;
+}
