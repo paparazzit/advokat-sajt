@@ -79,29 +79,60 @@ nav h1 span {
 nav h1 span .noSpace {
   letter-spacing: 0;
 }
-nav .navbar-nav .nav-link {
-  padding: 11px 2rem !important;
+nav h1:hover {
+  cursor: pointer;
 }
-nav .navbar-nav a:first-child {
-  padding-left: 6rem !important;
-  margin-left: 2rem;
+.navbar-nav {
+  justify-content: space-between !important;
+  width: 90% !important;
 }
-nav .navbar-nav a:nth-child(4) {
-  margin-left: 6rem !important;
 
-  padding-left: 2rem;
-  font-weight: 600;
+.nav-link {
+  padding: 0.7rem 1rem !important;
+}
+nav .navbar-nav a {
+  font-size: 1rem;
   color: black !important;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
-nav .navbar-nav a:nth-child(4),
-nav .navbar-nav a:first-child {
-  border-left: 1px solid var(--blue) !important;
+nav .navbar-nav a:hover {
+  color: var(--lightText) !important;
+  transition: var(--transition);
 }
-/* nav .navbar-nav a:last-child {
-  position: absolute;
-  right: 10px;
-} */
+.nav-link:nth-child(4) {
+  padding: 0.7rem 0rem 0.7rem 1rem !important;
+}
 
+.nav-link:first-child {
+  border-left: 1px solid var(--blue);
+  padding-left: 15% !important;
+}
+.nav-link:nth-child(3) {
+  border-right: 1px solid var(--blue);
+  padding-right: 15% !important;
+}
+
+/* nav .navbar-nav {
+  display: flex;
+  width: 600px !important;
+} */
+.nav-item:last-child {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.nav-item img {
+  position: absolute;
+  padding-top: 6px;
+  right: 20px !important;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 600;
+}
 /* header */
 header {
   background: url(img/Header.png);
