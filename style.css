@@ -512,6 +512,49 @@ footer .bottomBar {
   background: var(--deepGray) !important;
 }
 
+/* ADVOKATI */
+
+.advokati hgroup {
+  background-image: url(img/Naš\ tim.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.advokati .row {
+  padding: 30px 0 50px 0;
+}
+.advokati article {
+  flex: 0 0 48%;
+
+  background: var(--gray);
+}
+.advokati article .advCard {
+  display: flex;
+  max-height: 200px;
+  width: 500px;
+}
+.advokati article .advCard .img {
+  height: 100%;
+  flex: 0 0 30%;
+}
+.advokati article .advCard .text {
+  flex: 0 0 70%;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.advokati article .text h3 {
+  font-size: 1.5rem;
+}
+.advokati article .text p {
+  font-size: 0.85rem;
+}
+
 /* RESPONISVE */
 
 @media (max-width: 1200px) {
@@ -535,7 +578,33 @@ footer .bottomBar {
     margin: 0 auto !important;
     justify-content: space-between !important;
   }
-  footer h5 {
+
+  /* advokati */
+  .advokati article {
+    flex: 0 0 80%;
+    margin: 0 auto;
+  }
+  .advokati article:first-child {
+    margin-bottom: 50px;
+  }
+  .advokati article .advCard {
+    height: none;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 100%;
+  }
+  .advokati article .advCard .img {
+  }
+  .advokati article .advCard .img img {
+    width: 100% !important;
+  }
+  .advokati article .advCard .text {
+    padding: 0 20px;
+    flex: 0 0 4;
+    border: 1px solid red;
+  }
+
+  .advokati footer h5 {
     font-size: 0.85rem !important;
     /* text-align: center; */
     letter-spacing: 1px;
@@ -550,7 +619,7 @@ footer .bottomBar {
     justify-content: flex-end;
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   .oblastRada .row {
     /* width: 90% !important;
     margin: 0 auto; */
@@ -585,6 +654,13 @@ footer .bottomBar {
     position: absolute;
     bottom: -15px;
     left: 35%;
+  }
+  /* advokati */
+  .advokati article .advCard .advokati article .advCard .img {
+    flex: 0 0 1;
+  }
+  .advokati article .advCard .text {
+    flex: 0 0 1;
   }
   footer,
   footer .workHours {
