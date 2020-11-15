@@ -277,6 +277,13 @@ header img {
 .oblastRada article {
   position: relative;
 }
+.toggle:checked ~ .myCard {
+  transform: rotateY(-180deg);
+}
+.toggle {
+  display: none;
+}
+
 .oblastRada .myCard {
   width: 100%;
   height: 100%;
@@ -308,10 +315,10 @@ header img {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-.oblastRada article button {
+.oblastRada article label {
   position: absolute;
-  bottom: -15px;
-  left: 25%;
+  bottom: -25px;
+  left: 29%;
 }
 .oblastRada article img {
   width: 30% !important;
@@ -319,11 +326,12 @@ header img {
 }
 
 /* zasto mi */
+
 .zastoMi {
   background: var(--gray);
 }
 .zastoMi hgroup {
-  padding: 50px 0;
+  padding: 50px 0 100px 0;
   background: url(img/performance.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -335,7 +343,7 @@ header img {
 }
 .zastoMi article img {
   padding-right: 30px;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
 .zastoMi article h3::after {
   margin: 15px 0 !important;
@@ -351,6 +359,9 @@ header img {
 }
 .zastoMi article button:hover {
   background: transparent;
+}
+.zastoMi article {
+  padding-bottom: 100px;
 }
 
 /* BES */
@@ -516,11 +527,10 @@ footer .bottomBar {
     transition: var(--transition);
     color: var(--blue);
   }
-  .oblastRada article button {
-    left: 24%;
+  .oblastRada article label {
+    left: 26%;
   }
-
-  footer .row {
+  .zastoMi footer .row {
     width: 95% !important;
     margin: 0 auto !important;
     justify-content: space-between !important;
@@ -549,13 +559,19 @@ footer .bottomBar {
   .oblastRada .row .col-sm-6 {
     min-width: 300px !important;
   }
+  .oblastRada article label {
+    left: 24%;
+  }
 }
 @media (max-width: 768px) {
   .oblastRada .row .col-sm-6 {
     min-width: 270px !important;
   }
-  .oblastRada article button {
-    left: 22%;
+  .oblastRada article label {
+    left: 20%;
+  }
+  .zastoMi article:first-child {
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 575px) {
@@ -565,7 +581,7 @@ footer .bottomBar {
   .oblastRada article .wrapper {
     min-height: 250px;
   }
-  .oblastRada article button {
+  .oblastRada article label {
     position: absolute;
     bottom: -15px;
     left: 35%;

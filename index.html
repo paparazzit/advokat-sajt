@@ -147,8 +147,11 @@
         prava, a pretežno u oblastima:
       </p>
       <div class="row justify-content-between">
+
+        <!-- kartica 1 -->
         <article class="col-md-4 col-sm-6">
-          <div id="card" class="myCard" onclick="myFunction(event)">
+          <input type="checkbox" id="toggle1" class="toggle">
+          <div id="card" class="myCard" >
             <div class="wrapper border text-center">
             <img src="img/gradjansko i privredno pravo-Center.png" alt="" />
             <h4>Građansko i privredno pravo</h4>
@@ -163,12 +166,14 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           </div>
         </div>  
-          <button class="btn-blue" onclick="myFunction(event)">Pročitajte više</button>
-
-
+          <label class="toggle-label btn-blue" for="toggle1">Pročitajte više</label>
         </article>
+
+
+          <!-- kartica 2 -->
         <article class="col-md-4 col-sm-6">
-          <div id="card" class="myCard" onclick="myFunction(event)">
+          <input type="checkbox" id="toggle2" class="toggle">
+          <div id="card" class="myCard" >
             <div class="wrapper border text-center">
               <img src="img/upravno pravo-centered.png" alt="" />
               <h4>Građansko i privredno pravo</h4>
@@ -183,12 +188,13 @@
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
-          <button class="btn-blue" onclick="myFunction(event)">Pročitajte više</button>
+          <label class="toggle-label btn-blue" for="toggle2">Pročitajte više</label>
+       </article>
 
-
-        </article>
+         <!-- kartica 3 -->
         <article class="col-md-4 col-sm-6">
-          <div class="myCard" id="card" onclick="myFunction(event)">
+          <input type="checkbox" id="toggle3" class="toggle">
+          <div class="myCard" id="card" ">
             <div class="wrapper border text-center">
               <img src="img/nasledno i porodicno pravo-centered.png" alt="" />
               <h4>Građansko i privredno pravo</h4>
@@ -203,13 +209,13 @@
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
           </div>          
-          <button class="btn-blue"onclick="myFunction(event)" >Pročitajte više</button>
-
-
+          <label class="toggle-label btn-blue" for="toggle3">Pročitajte više</label>
         </article>
 
-        <article class="col-md-4 col-sm-6">
-          <div class="myCard" id="card" onclick="myFunction(event)">
+          <!-- kartica 4 -->
+         <article class="col-md-4 col-sm-6">
+          <input type="checkbox" id="toggle4" class="toggle">
+          <div class="myCard" id="card" >
             <div class="wrapper border text-center">
               <img src="img/krivicno i prekrsajno pravo-centered.png" alt="" />
               <h4>Građansko i privredno pravo</h4>
@@ -224,12 +230,13 @@
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
-            <button class="btn-blue" onclick="myFunction(event)">Pročitajte više</button>
-
-
+          <label class="toggle-label btn-blue" for="toggle4">Pročitajte više</label>
         </article>
+
+          <!-- kartica 5 -->
         <article class="col-md-4 col-sm-6">
-          <div class="myCard" id="card" onclick="myFunction(event)">
+          <input type="checkbox" id="toggle5" class="toggle">
+          <div class="myCard" id="card" >
             <div class="wrapper border text-center">
             <img src="img/radno pravo-Centered.png" alt="" />
             <h4>Građansko i privredno pravo</h4>
@@ -244,12 +251,13 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-          <button class="btn-blue" onclick="myFunction(event)">Pročitajte više</button>
-
-
+        <label class="toggle-label btn-blue" for="toggle5">Pročitajte više</label>
         </article>
+
+          <!-- kartica 6 -->
         <article class="col-md-4 col-sm-6">
-          <div class="myCard" id="card"onclick="myFunction(event)" >
+          <input type="checkbox" id="toggle6" class="toggle">
+          <div class="myCard" id="card">
             <div class="wrapper border text-center">
               <img src="img/ustavno pravo-centered.png" alt="" height="100px" />
               <h4>Građansko i privredno pravo</h4>
@@ -265,7 +273,7 @@
             </div>
           </div>
           
-          <button class="btn-blue" onclick="myFunction(event)">Pročitajte više</button>
+          <label class="toggle-label btn-blue" for="toggle6">Pročitajte više</label>
         </article>
       </div>
       </div>
@@ -275,7 +283,7 @@
       <hgroup><h2 class="text-center">Zašto mi</h2></hgroup>
       <div class="container">
         <div class="row">
-          <article class="col-md-6">
+          <article class="col-md-6 d-flex justify-content-center align-intems-center">
             <img src="img/zasto mi.png" alt="" class="img-fluid" />
           </article>
           <article class="col-md-6 d-flex flex-column align-items-left">
@@ -435,7 +443,7 @@
         <p>&copy; Advokatska Kancelarija Dobrosavljev </p>
       </div>
     </footer>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
