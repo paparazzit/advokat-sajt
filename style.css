@@ -52,7 +52,17 @@ h3::after {
 .ml-6 {
   margin-left: 80px;
 }
-
+.headers {
+  margin: 50px 0 !important;
+  background-size: 250px;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.headers h2 {
+  padding: 20px 0 !important;
+  font-size: 2.2rem !important;
+  font-weight: 500 !important;
+}
 /* navbar */
 
 .bg-light {
@@ -67,6 +77,14 @@ nav .border-right {
   padding-bottom: 0 !important;
   padding-top: 0 !important;
   margin-left: 10% !important;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  text-decoration: none;
+  color: black;
 }
 nav h1 {
   font-size: 1.2rem !important;
@@ -181,10 +199,6 @@ header img {
 
 .aboutUs hgroup {
   background: url(img/O\ nama.png);
-  background-position: center;
-  background-size: 15%;
-  background-repeat: no-repeat;
-  margin: 20px 0 30px 0;
 }
 .aboutUs hgroup h2 {
   font-weight: 500 !important;
@@ -250,20 +264,13 @@ header img {
 /* oblast rada */
 
 .oblastRada hgroup {
-  padding: 60px 0;
   background: url(img/cime\ se\ bavimo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50%;
+  background-size: 450px !important;
 }
 .oblastRada hgroup h2 {
-  font-weight: 500 !important;
-  font-size: 2.2rem;
-  padding-top: 1.5%;
+  padding-top: 32px !important;
 }
-.oblastRada p {
-  /* margin-bottom: 60px; */
-}
+
 .oblastRada .row {
   padding-bottom: 70px;
 }
@@ -332,15 +339,12 @@ header img {
   background: var(--gray);
 }
 .zastoMi hgroup {
-  padding: 50px 0 100px 0;
   background: url(img/performance.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 27%;
 }
 .zastoMi hgroup h2 {
   font-weight: 500;
   font-size: 2.2rem;
+  padding-top: 30px !important;
 }
 .zastoMi article img {
   padding-right: 30px;
@@ -414,14 +418,11 @@ textarea {
 }
 /* Gostovanja */
 
-.gostovanja {
-}
 .gostovanja hgroup {
   background: url(img/Medija.png);
-  background-size: 20%;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 70px 0 80px 0;
+}
+.gostovanja hgroup h2 {
+  padding-bottom: 30px !important;
 }
 .gostovanja article img {
   position: relative;
@@ -517,43 +518,54 @@ footer .bottomBar {
 
 .advokati hgroup {
   background-image: url(img/Naš\ tim.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 15%;
-  padding-top: 70px;
-  padding-bottom: 70px;
 }
-.advokati .row {
-  padding: 30px 0 50px 0;
+.advokati hgroup h2 {
 }
-.advokati article {
-  flex: 0 0 48%;
 
-  background: var(--gray);
+.container-1 {
+  width: 80%;
+  margin: 0 auto;
 }
-.advokati article .advCard {
+.row-1 {
   display: flex;
-  max-height: 200px;
-  width: 500px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
 }
-.advokati article .advCard .img {
-  height: 100%;
+.advokati .advokatCard {
+  display: flex;
+  height: 220px !important;
+  /* justify-content: space-between; */
+  flex: 0 0 47%;
+}
+
+.advokati .advokatCard .advokat-1 {
+  background-image: url(img/advokat_1.png);
+}
+.advokati .advokatCard .advokat-2 {
+  background-image: url(img/advokat_2.png);
+}
+.advokati .advokatCard .img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
   flex: 0 0 30%;
 }
-.advokati article .advCard .text {
-  flex: 0 0 70%;
+.advokati .text {
+  background-color: var(--gray);
+  flex: 0 1 70%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
-  flex-direction: column;
-  padding: 0 20px;
+  padding: 20px 20px 20px 50px;
 }
-
-.advokati article .text h3 {
+.advokati .text h3 {
   font-size: 1.5rem;
 }
-.advokati article .text p {
-  font-size: 0.85rem;
+.advokati .text p {
+  font-size: 0.9rem;
 }
 
 /* RESPONISVE */
@@ -581,28 +593,20 @@ footer .bottomBar {
   }
 
   /* advokati */
-  .advokati article {
+  .advokati .row-1 .advokatCard {
+    flex: 0 0 100%;
+  }
+  .advokati .row-1 .advokatCard:first-child {
+    margin-bottom: 80px;
+  }
+  .advokati .advokatCard .img {
+    flex: 0 0 20%;
+  }
+  .advokati .advokatCard .advokat-2 {
+    order: 1;
+  }
+  .advokati .advokatCard .text {
     flex: 0 0 80%;
-    margin: 0 auto;
-  }
-  .advokati article:first-child {
-    margin-bottom: 50px;
-  }
-  .advokati article .advCard {
-    height: none;
-    justify-content: space-between;
-    border: 1px solid black;
-    width: 100%;
-  }
-  .advokati article .advCard .img {
-  }
-  .advokati article .advCard .img img {
-    width: 100% !important;
-  }
-  .advokati article .advCard .text {
-    padding: 0 20px;
-    flex: 0 0 4;
-    border: 1px solid red;
   }
 
   .advokati footer h5 {
@@ -621,9 +625,21 @@ footer .bottomBar {
   }
 }
 @media (max-width: 991px) {
+  nav .navbar-nav {
+    margin-left: 10% !important;
+    padding-left: 5% !important;
+  }
+  .nav-link:first-child,
+  .nav-link:nth-child(3) {
+    border: none;
+    padding: 0.7rem 1rem !important;
+  }
+
+  .nav-item:last-child {
+    display: none;
+  }
+
   .oblastRada .row {
-    /* width: 90% !important;
-    margin: 0 auto; */
     justify-content: center !important;
   }
   .oblastRada .row .col-sm-6 {
@@ -631,6 +647,13 @@ footer .bottomBar {
   }
   .oblastRada article label {
     left: 24%;
+  }
+
+  .advokati .row-1 .advokatCard .img {
+    flex: 0 0 25% !important;
+  }
+  .advokati .row-1 .advokatCard .text {
+    flex: 0 0 75% !important;
   }
 }
 @media (max-width: 768px) {
@@ -642,6 +665,12 @@ footer .bottomBar {
   }
   .zastoMi article:first-child {
     padding-bottom: 50px;
+  }
+  .advokati .row-1 .advokatCard .img {
+    flex: 0 0 35% !important;
+  }
+  .advokati .row-1 .advokatCard .text {
+    flex: 0 0 65% !important;
   }
 }
 @media (max-width: 575px) {
@@ -657,12 +686,7 @@ footer .bottomBar {
     left: 35%;
   }
   /* advokati */
-  .advokati article .advCard .advokati article .advCard .img {
-    flex: 0 0 1;
-  }
-  .advokati article .advCard .text {
-    flex: 0 0 1;
-  }
+
   footer,
   footer .workHours {
     text-align: center !important;
@@ -672,5 +696,11 @@ footer .bottomBar {
   }
   footer article {
     margin-bottom: 30px;
+  }
+  .advokati .row-1 .advokatCard .img {
+    display: none;
+  }
+  .advokati .row-1 .advokatCard .text {
+    flex: 0 0 100% !important;
   }
 }
