@@ -424,32 +424,33 @@ textarea {
 .gostovanja hgroup h2 {
   padding-bottom: 30px !important;
 }
-.gostovanja article img {
-  position: relative;
-  width: 100%;
-}
 
-.gostovanja article .date {
+.gostovanja .item .date {
   background: var(--blue);
   color: white;
   display: inline-block;
-  padding: 0px 10px;
+  padding: 0px 5px;
   position: absolute;
   top: 0px;
   left: 0px;
-  margin-left: 15px;
+  margin-left: opx;
 }
-.gostovanja article .date h4 {
+.gostovanja .item .date h4 {
   font-weight: 700;
   font-size: 1.4rem;
 }
-.gostovanja article .date p {
+.gostovanja .item .date p {
   margin-bottom: 0px !important;
 }
 .owl-theme .owl-dots .owl-dot {
   display: none !important;
 }
-
+button.owl-next {
+  /* border: 1px solid black !important; */
+}
+button:focus {
+  outline: none !important;
+}
 .owl-theme .owl-nav {
   font-size: 4rem;
   color: var(--lightText);
