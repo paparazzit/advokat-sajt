@@ -116,10 +116,10 @@ nav .navbar-nav a:hover {
   padding-right: 15% !important;
 }
 
-/* nav .navbar-nav {
+nav .navbar-nav {
   display: flex;
   width: 600px !important;
-} */
+}
 .nav-item:last-child {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -136,6 +136,7 @@ nav .navbar-nav a:hover {
   color: rgba(0, 0, 0, 0.9);
   font-weight: 600;
 }
+
 /* header */
 header {
   background: url(img/Header.png);
