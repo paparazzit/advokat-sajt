@@ -157,7 +157,7 @@ nav .navbar-nav {
 
 /* header */
 header {
-  background: url(img/Header.png);
+  background: url(/img/Header.png);
   background-position: center;
   background-size: cover;
   height: 50vh;
@@ -198,7 +198,7 @@ header img {
 /* O nama */
 
 .aboutUs hgroup {
-  background: url(img/O\ nama.png);
+  background: url(/img/O\ nama.png);
 }
 .aboutUs hgroup h2 {
   font-weight: 500 !important;
@@ -243,7 +243,7 @@ header img {
 
 /* istorija */
 .istorija {
-  background: url(img/history.png);
+  background: url(/img/history.png);
   background-position: center;
   background-size: cover;
   /* height: auto; */
@@ -264,7 +264,7 @@ header img {
 /* oblast rada */
 
 .oblastRada hgroup {
-  background: url(img/cime\ se\ bavimo.png);
+  background: url(/img/cime\ se\ bavimo.png);
   background-size: 450px !important;
 }
 .oblastRada hgroup h2 {
@@ -339,7 +339,7 @@ header img {
   background: var(--gray);
 }
 .zastoMi hgroup {
-  background: url(img/performance.png);
+  background: url(/img/performance.png);
 }
 .zastoMi hgroup h2 {
   font-weight: 500;
@@ -403,7 +403,7 @@ textarea {
 /* counter */
 .counter {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/counter.png);
+    url(/img/counter.png);
   background-position: center;
   background-size: cover;
   height: 35vh;
@@ -419,7 +419,7 @@ textarea {
 /* Gostovanja */
 
 .gostovanja hgroup {
-  background: url(img/Medija.png);
+  background: url(/img/Medija.png);
 }
 .gostovanja hgroup h2 {
   padding-bottom: 30px !important;
@@ -446,11 +446,15 @@ textarea {
 .gostovanja article .date p {
   margin-bottom: 0px !important;
 }
-.gostovanja p.indicator {
-  font-size: 4.6rem;
-  color: #cccccc;
-  font-weight: 200;
+.owl-theme .owl-dots .owl-dot {
+  display: none !important;
 }
+
+.owl-theme .owl-nav {
+  font-size: 4rem;
+  color: var(--lightText);
+}
+
 /* nasli klijenti */
 .nasiKlijenti {
   background: var(--gray);
@@ -517,7 +521,7 @@ footer .bottomBar {
 /* ADVOKATI */
 
 .advokati hgroup {
-  background-image: url(img/Naš\ tim.png);
+  background-image: url(/img/Naš\ tim.png);
 }
 .advokati hgroup h2 {
 }
@@ -540,10 +544,10 @@ footer .bottomBar {
 }
 
 .advokati .advokatCard .advokat-1 {
-  background-image: url(img/advokat_1.png);
+  background-image: url(/img/advokat_1.png);
 }
 .advokati .advokatCard .advokat-2 {
-  background-image: url(img/advokat_2.png);
+  background-image: url(/img/advokat_2.png);
 }
 .advokati .advokatCard .img {
   background-position: center;
