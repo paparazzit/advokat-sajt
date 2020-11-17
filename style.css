@@ -448,9 +448,7 @@ textarea {
 .owl-theme .owl-dots .owl-dot {
   display: none !important;
 }
-button.owl-next {
-  /* border: 1px solid black !important; */
-}
+
 button:focus {
   outline: none !important;
 }
@@ -479,7 +477,7 @@ button:focus {
   background: var(--gray);
   padding: 80px 0;
 }
-.nasiKlijenti h2 {
+.nasiKlijenti h2.text-center {
   padding-bottom: 50px;
 }
 /* footer */
@@ -552,13 +550,13 @@ footer .bottomBar {
 .row-1 {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   flex-wrap: wrap;
 }
 .advokati .advokatCard {
   display: flex;
   height: 220px !important;
-  /* justify-content: space-between; */
+
   flex: 0 0 47%;
 }
 
@@ -589,6 +587,17 @@ footer .bottomBar {
 }
 .advokati .text p {
   font-size: 0.9rem;
+}
+.nasiKlijenti .col-md-2 img {
+  mix-blend-mode: darken;
+}
+.nasiKlijenti hgroup h2 {
+  margin-bottom: 35px !important;
+  font-weight: 500;
+}
+.nasiKlijenti hgroup p {
+  margin-bottom: 35px !important;
+  line-height: 2;
 }
 
 /* RESPONISVE */
