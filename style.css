@@ -10,8 +10,14 @@
   --font-size-small: 12px;
   --transition: 0.4s ease;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-size: var(--font-size);
+  scroll-behavior: smooth;
 }
 .m-right {
   margin-right: 5%;
