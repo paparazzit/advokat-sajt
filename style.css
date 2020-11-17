@@ -475,7 +475,7 @@ button:focus {
 /* nasli klijenti */
 .nasiKlijenti {
   background: var(--gray);
-  padding: 80px 0;
+  padding: 50px 0 80px 0;
 }
 .nasiKlijenti h2.text-center {
   padding-bottom: 50px;
@@ -540,8 +540,6 @@ footer .bottomBar {
 .advokati hgroup {
   background-image: url(img/Naš\ tim.png);
 }
-.advokati hgroup h2 {
-}
 
 .container-1 {
   width: 80%;
@@ -588,7 +586,8 @@ footer .bottomBar {
 .advokati .text p {
   font-size: 0.9rem;
 }
-.nasiKlijenti .col-md-2 img {
+
+.nasiKlijenti .col-lg-2 img {
   mix-blend-mode: darken;
 }
 .nasiKlijenti hgroup h2 {
@@ -600,6 +599,52 @@ footer .bottomBar {
   line-height: 2;
 }
 
+/* kontakt */
+
+.kontakt hgroup {
+  background: url(img/Kako\ do\ nas.png);
+  background-size: 330px;
+}
+.row-2 {
+  width: 100% !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.kontakt .row-2 .map {
+  flex: 0 0 64%;
+}
+.kontakt .row-2 .kanc {
+  flex: 0 0 34%;
+}
+.kontakt .row-2 .kanc img {
+  width: 100%;
+}
+.kontakt .map .map-responsive {
+  overflow: hidden;
+  padding-bottom: 10%;
+  position: relative;
+  height: 100%;
+}
+
+.kontakt .map .map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.info .col-md-4 p span {
+  color: var(--blue);
+}
+.info .row-2 .col-md-5 {
+  padding: 0 !important;
+}
+.info .row-2 .col-md-5 hr {
+  width: 100%;
+}
 /* RESPONISVE */
 
 @media (max-width: 1200px) {
