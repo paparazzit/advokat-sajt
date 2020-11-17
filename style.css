@@ -445,9 +445,6 @@ textarea {
   text-decoration: none;
   font-style: normal;
 }
-.owl-theme .owl-dots .owl-dot {
-  display: none !important;
-}
 
 button:focus {
   outline: none !important;
@@ -456,22 +453,22 @@ button:focus {
   font-size: 4rem;
   color: var(--lightText);
 }
-.gostovanja .item a {
-  font-size: 0.95rem;
-  text-decoration: underline;
-  color: var(--blue);
-}
-.gostovanja .item a:hover {
-  text-decoration: none;
-  color: var(--textColor);
-  transition: var(--transition);
-}
+
 .gostovanja .item p {
   font-size: 0.95rem;
   font-style: italic;
   text-decoration: underline;
   color: var(--lightText);
 }
+.gostovanja .item p.description {
+  color: var(--blue);
+  margin-bottom: 0 !important;
+}
+/* .gostovanja .item a:hover {
+  text-decoration: none;
+  color: var(--textColor);
+  transition: var(--transition);
+} */
 /* nasli klijenti */
 .nasiKlijenti {
   background: var(--gray);
